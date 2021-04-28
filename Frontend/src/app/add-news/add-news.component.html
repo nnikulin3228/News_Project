@@ -1,0 +1,28 @@
+
+<div class="border border-light p-5">
+
+    <p class="h4 mb-4 text-center blue-text">What's new?</p>
+
+
+    <input id="defaultContactFormName" class="form-control mb-4" placeholder="Name" [(ngModel)]="news.authorName"/>
+    <input type="text" id="defaultContactFormEmail" class="form-control mb-4" placeholder="Headline" [(ngModel)]="news.headLine"/>
+
+    <label for="textarea" class="blue-text">Write your news here</label>
+    <textarea id="textarea" class="form-control mb-4" rows="16" placeholder="Textarea" [(ngModel)]="news.textArea"></textarea>
+
+<input type="date" id="defaultContactFormName" class="form-control mb-4" placeholder="Selected date" [(ngModel)]="news.publishDate">
+
+    <div class="input-group mb-4">
+        <div class="input-group-prepend">
+            <span class="input-group-text blue-text">Upload</span>
+        </div>
+        <div class="custom-file">
+            <input type="file" class="custom-file-input" id="fileInput" aria-describedby="fileInput" #file (change)="upload(file.files)">
+            <label class="custom-file-label" for="fileInput">Your image</label>
+        </div>
+    </div>
+
+
+
+    <button class="btn btn-info btn-block btn blue-gradient" (click)="Send()">Send</button>
+</div>

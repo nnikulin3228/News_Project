@@ -1,0 +1,132 @@
+<main class="mt-5 pt-5">
+  <div class="container">
+    <section class="card wow fadeIn"
+      style="background-image:url(https://images.pexels.com/photos/1092364/pexels-photo-1092364.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260)">
+      <div class="card-body gray-text  text-center py-5 px-5 my-5">
+        <h1 class="mb-4">
+          <strong>Nikulin Nikolay News</strong>
+        </h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, pariatur?</p>
+
+        <p class="mb-4">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nemo nesciunt, architecto pariatur magnam
+          excepturi, quas accusantium dolores, modi autem explicabo hic veniam est. Fugit.
+        </p>
+
+        <a href="https://vk.com/timekillerya" class="btn btn-outline-black btn-lg">
+          Сontact with me <i class="fa fa-graduation-cap ml-2"></i>
+        </a>
+      </div>
+    </section>
+
+    <hr class="my-5">
+
+    <section class="wow fadeIn">
+      <h2 class="h1 text-center my-5 front-weight-bold">
+        Nikulin Nikolay News
+      </h2>
+      <div class="row text-left">
+        <div class="col-lg-6 col-md-12">
+          <div class="view overlay rounded z-depth-1-half mb-3">
+            <img
+              src="https://trace.tv/wp-content/uploads/2016/11/logo_sport1.png"
+              alt="" class="img fluid">
+          </div>
+
+          <h3>
+            <a href="#" class="font-weight-bolder grey-text">
+              <strong> This is a list of news </strong>
+            </a>
+          </h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel assumenda nulla corrupti iusto dolorem dolore
+            blanditiis eaque, necessitatibus magni. Adipisci reiciendis architecto dolorum. Quisquam quasi nulla veniam
+            sunt. Excepturi, tempore!
+          </p>
+          <hr>
+          <div *ngFor="let a of allNews; let i = index">
+            <div *ngIf="i%2 === 0">
+              <hr>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="view overlay rounded z-depth-1">
+                    <img
+                      src="http://localhost:5000/{{a.id}}.jpg"
+                      alt="No image" onerror="this.src='https://www.freeiconspng.com/uploads/no-image-icon-13.png';" class="img-fluid">
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <p class="font-weight-bolder blue-text text-center">
+                    <strong>{{a.headLine}}</strong>
+                  </p>
+
+                  <a>
+                    {{a.textArea}}
+                    <i class="fa fa-angle-right float-right" (click)="Delete(a.id)"></i>
+                  </a>
+
+                  <p class="d-flex justify-content-between grey-text">
+                    <strong>{{a.publishDate | date:'dd/MM/yyyy' }}</strong>
+                    <strong>{{a.authorName}}</strong>
+                  </p>
+                </div>
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12">
+          <div class="view overlay rounded z-depth-1-half mb-3">
+            <img
+              src="https://trace.tv/wp-content/uploads/2016/11/logo_urban_r1.png"
+              alt="" class="img fluid">
+          </div>
+          <div class="news-data">
+
+
+          </div>
+          <h3>
+            <a href="#" class="font-weight-bolder grey-text">
+              <strong> This is a list of news </strong>
+            </a>
+          </h3>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel assumenda nulla corrupti iusto dolorem dolore
+            blanditiis eaque, necessitatibus magni. Adipisci reiciendis architecto dolorum. Quisquam quasi nulla veniam
+            sunt. Excepturi, tempore!
+          </p>
+          <hr>
+          <div *ngFor="let a of allNews; let i = index">
+            <div *ngIf="i%2 === 1">
+              <hr>
+              <div class="row">
+                <div class="col-md-3">
+                  <div class="view overlay rounded z-depth-1">
+                    <img
+                      src="http://localhost:5000/{{a.id}}.jpg"
+                      alt="No image" onerror="this.src='https://www.freeiconspng.com/uploads/no-image-icon-13.png';" class="img-fluid">
+                  </div>
+                </div>
+                <div class="col-md-9">
+                  <p class="font-weight-bolder blue-text text-center">
+                    <strong>{{a.headLine}}</strong>
+                  </p>
+
+                  <a>
+                    {{a.textArea}}
+                    <i class="fa fa-angle-right float-right " (click)="Delete(a.id)"></i>
+                  </a>
+
+                  <p class="d-flex justify-content-between grey-text">
+                    <strong>{{a.publishDate | date:'dd/MM/yyyy' }}</strong>
+                    <strong>{{a.authorName}}</strong>
+                  </p>
+                </div>
+              </div>
+              <hr>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>

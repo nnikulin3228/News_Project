@@ -1,0 +1,9 @@
+/home/nnikulin/Nikolay/News/back/News.Objects/bin/Debug/netcoreapp2.2/News.Objects.deps.json
+/home/nnikulin/Nikolay/News/back/News.Objects/bin/Debug/netcoreapp2.2/News.Objects.dll
+/home/nnikulin/Nikolay/News/back/News.Objects/bin/Debug/netcoreapp2.2/News.Objects.pdb
+/home/nnikulin/Nikolay/News/back/News.Objects/obj/Debug/netcoreapp2.2/News.Objects.csprojAssemblyReference.cache
+/home/nnikulin/Nikolay/News/back/News.Objects/obj/Debug/netcoreapp2.2/News.Objects.csproj.CoreCompileInputs.cache
+/home/nnikulin/Nikolay/News/back/News.Objects/obj/Debug/netcoreapp2.2/News.Objects.AssemblyInfoInputs.cache
+/home/nnikulin/Nikolay/News/back/News.Objects/obj/Debug/netcoreapp2.2/News.Objects.AssemblyInfo.cs
+/home/nnikulin/Nikolay/News/back/News.Objects/obj/Debug/netcoreapp2.2/News.Objects.dll
+/home/nnikulin/Nikolay/News/back/News.Objects/obj/Debug/netcoreapp2.2/News.Objects.pdb
